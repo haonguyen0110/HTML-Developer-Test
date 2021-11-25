@@ -1,0 +1,120 @@
+.work{
+    position: relative;
+    height: 100%;
+    
+  
+   
+  
+    &__content{
+      padding: 0 6.5rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding-top: 3rem;
+      @media only screen and (max-width: 1750px){
+        padding: 0 5rem;
+        padding-top: 15rem;
+      
+       }
+       @include tablet(){
+         padding: 0 6.5rem;
+       }
+      &__items{
+        border-left: 1px solid #ffffff1c;
+        padding-left: 3rem;
+        width:90%;
+        height: 50%;
+      li.active{
+        .title{
+          opacity: 100%;
+          list-style: square;
+          &::after{
+            position: absolute;
+            content: "";
+            height: 0.5rem;
+            width: 0.5rem;
+           background-color: $main-color;
+           top: 50%;
+           left: -3.2rem;
+           
+          }
+        }
+        .more{
+          color: $main-color;
+          position: relative;
+          padding-left: 5rem;
+          display: block;
+          transition: all 0.5s;
+          &:hover{
+              color: $txt-color;
+          }
+          &::before{
+            content: "";
+            left: 0;
+            bottom: 50%;
+            position: absolute;
+            height: 3px;
+            background-color:#ffffff1c ;
+            width: 5rem;
+          }
+        }
+        .item__text{
+          display: block;
+        }
+      }
+        &__item{
+          margin: 3rem 0;
+          p{
+            margin: 2rem 0;
+            line-height: 1.8rem;
+            font-weight: 300;
+          }
+          
+        }
+        .item__text{
+          display: none;
+          font-size: 1rem;
+        }
+          .title{
+            font-size: 1.5rem;
+            opacity: 30%;
+            margin-bottom: 3rem;
+            position: relative;
+            transition: all 0.5s;
+            &:hover{
+                color: $main-color;
+            }
+            
+          }
+        .more{
+          display: none;
+        }
+         
+         
+      }
+  
+      &__image{
+        width: 100%;
+       
+        &__item{
+          width: 100%;
+          border: 1px solid #ffffff1c;
+          margin-left: 10rem;
+          height: 100%;
+          border-radius: 50% 50% 0 0;
+          padding: 10rem 0 0 10rem;
+          @media only screen and (max-width: 1750px){
+            padding: 5rem 0 0 5rem;
+            margin-left: 2rem;
+          }
+        }
+       
+        img{
+          width: 100%;
+          
+        }
+      }
+    }
+  
+  }
+  

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import  "./_variable";
+@import "./_mixin";
+@import "./_reset";
+@import "./header.scss";
+@import "./ourCompany.scss";
+@import "./work.scss";
+@import "./project.scss";
+@import "./commitment.scss";
+@import "./client.scss";
+@import "./contact.scss";
+@import "./footer.scss";
+
+.backToTop{
+   position: fixed;
+    font-size: 3rem;
+    bottom: 0;
+    right: 2rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover{
+        color: $main-color;
+    }
+}
+
+
+
+
+
+
+
+
+

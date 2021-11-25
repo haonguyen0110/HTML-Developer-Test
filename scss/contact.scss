@@ -1,0 +1,72 @@
+.contact{
+    position: relative;
+    height: 100%;
+   
+   
+    @include tablet(){
+      padding-top: 0;
+      height: 100%;
+      padding-bottom: 10rem;
+    }
+    &__content{
+      padding: 20rem 5rem;
+      @include tablet(){
+        padding: 0 5rem;
+      }
+      &__item.left{
+        border-left: 1px solid #ffffff1c;
+        padding-left: 3rem;
+        li{
+          padding: 1rem;
+          
+         &:hover{
+             h3{
+                 color: $main-color;
+             }
+             p{
+                 font-size: 1.5rem;
+             }
+         }
+  
+          h3{
+            margin-bottom: 1rem;
+            color:rgba(255, 255, 255, 0.315);
+            font-size: 1.2rem;
+            position: relative;
+            transition: all 0.5s;
+            &::after{
+              position: absolute;
+              content: "";
+              height: 0.5rem;
+              width: 0.5rem;
+             background-color: $main-color ;
+             top: 50%;
+             left: -4.3rem;
+             opacity: 100%!important;
+            }
+          }
+          p{
+            font-size: 1rem;
+            transition: all 0.5s;
+          }
+        }
+      }
+      &__item.img{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 775px;
+        @media only screen and (max-width: 1750px){
+          display: none;
+      }
+      
+        img{
+          height: 100%;
+          width: 100%;
+        }
+      
+      }
+    }
+  }
+  

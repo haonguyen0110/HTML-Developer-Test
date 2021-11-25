@@ -1,0 +1,55 @@
+footer{
+    background-color: #10151A;
+
+    .footer__content{
+      display: flex;
+      justify-content: space-between;
+      padding: 5rem ;
+      @include tablet(){
+        padding:  5rem;
+      }
+      &__items{
+          &:hover{
+              h3{
+                  opacity: 100%;
+                  color: $main-color;
+              }
+            
+          }
+        h3{
+          opacity: 50% ;
+          margin-bottom: 1.5rem;
+          transition: all 0.5s;
+        }
+        li{
+          margin-bottom: 1rem;
+          transition: all 0.5s;
+          &:hover{
+              font-size: 1.5rem;
+              color: $main-color;
+          }
+        }
+      }
+    }
+    .coppy{
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid #ffffff1c;
+      padding: 1rem 5rem;
+      @include tablet(){
+        padding: 1rem 5rem;
+      }
+      .social{
+          i{
+              cursor: pointer;
+              transition: all 0.5s;
+              margin: 0 1rem;
+              &:hover{
+                  color: $main-color;
+                  font-size: 1.3rem;
+              }
+          }
+    
+      }
+    }
+  }

@@ -1,0 +1,59 @@
+.client{
+    position: relative;
+    height: 100%;
+    padding-top:20rem ;
+    background: url('../assets/image/SB\ Estella\ \(7\).png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow:inset 0 0 0 2000px #181f27ab;
+    @include tablet(){
+      padding: 0;
+      height: 100%;
+      padding-bottom: 10rem;
+      
+    }
+ 
+    &__content{
+     
+      &__items{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .item.partner{
+       
+            padding-left: 10%;
+        
+        }
+        .item{
+        width: 50%;
+        padding: 2rem 3rem;
+        &:hover{
+            h2{
+                font-weight: 900;
+                color: white;
+            }
+           
+        }
+        table{
+       
+         td{
+           padding: 3rem;
+           
+         }
+        }
+        h2{
+          margin-bottom: 5rem;
+          font-size: 1.5rem;
+          font-weight: 300;
+          color: $main-color;
+          transition: all 0.5s;
+        
+        }
+        }
+        .item.left{
+          border-right: 1px solid #ffffff1c;
+        }
+    }
+    }
+  }
