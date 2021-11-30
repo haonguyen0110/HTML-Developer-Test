@@ -115,7 +115,8 @@ img {
           font-size: 20px;
           font-weight: 500;
           padding: 1.2rem;
-          transition: all 0.5s; }
+          transition: all 0.5s; 
+          cursor: pointer;}
           @media only screen and (max-width: 1024px) {
             .header__bottom__content__item a {
               font-size: 1rem; } }
